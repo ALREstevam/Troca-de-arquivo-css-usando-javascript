@@ -1,0 +1,19 @@
+.changeButton{
+    display: block;
+    margin: auto;
+
+    border: red solid 3px;
+    background-color:lightcoral;
+    color: brown;
+    cursor: pointer;
+    font-size: 3em;
+}
+
+
+.changeButton:hover{
+    background-color: crimson;
+}
+
+body{
+    font-family: "Courier New", monospace, Serif;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="js/changeStylesheet.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css" id="stylesheet_link">
+
+    <!-- masterSheet tem definições de estilo que se manterão apesar da troca -->
+    <link rel="stylesheet" type="text/css" href="css/masterSheet.css">
+
+</head>
+<body onload="changeStylesheet('css/css', 'stylesheet_link')"><!--Assim que a página for carregada um estilo vai ser definido-->
+
+    <!-- Ao clicar no botão a folha de estilos é trocada -->
+    <!-- O estilo do botão é definido na mastersheet, a formatação não muda -->
+    <button name="click" onclick="changeStylesheet('css/css', 'stylesheet_link')" class="changeButton">Trocar CSS</button>
+
+    <!-- Título 1 e título 2 são editados no css1 e no css2-->
+    <h1>Título 1</h1>
+    <h2>Título 2</h2>
+
+
+    <!-- Cada div e editada em um css diferente-->
+    <div class="div1">
+        <span>div editada apenas no css1.css</span>
+    </div>
+
+    <div class="div2">
+        <span>div editada apenas no css2.css</span>
+    </div>
+
+    <!-- Div com parâmetros diferentes editados emm cada css-->
+    <div class="divBoth">
+        <span>div editada em css1.css e csss2.css</span>
+    </div>
+
+</body>
+</html>

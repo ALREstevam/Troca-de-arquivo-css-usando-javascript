@@ -1,0 +1,20 @@
+body{
+    background-color: lightcoral;
+}
+
+h1{
+    color: blue;
+}
+
+h2{
+    color: green;
+}
+
+.div2{
+    background-color: darkgrey;
+    font-size: 25px;
+}
+
+.divBoth{
+    background-color: blue;
+}
