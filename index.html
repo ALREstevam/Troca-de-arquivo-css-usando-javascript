@@ -7,17 +7,17 @@
     <script src="js/changeStylesheet.js">
     </script>
 
-    <link rel="stylesheet" type="text/css" id="stylesheet_link">
+    <link rel="stylesheet" type="text/css" id="stylesheet_link" href="css/css1.css">
 
     <!-- masterSheet tem definições de estilo que se manterão apesar da troca -->
     <link rel="stylesheet" type="text/css" href="css/masterSheet.css">
 
 </head>
-<body onload="changeStylesheet('css/css', 'stylesheet_link')"><!--Assim que a página for carregada um estilo vai ser definido-->
+<body onload="setSheetList(['css/css1.css', 'css/css2.css', 'css/reset.css']); nextSheet('stylesheet_link');"><!--Assim que a página for carregada um estilo vai ser definido-->
 
     <!-- Ao clicar no botão a folha de estilos é trocada -->
     <!-- O estilo do botão é definido na mastersheet, a formatação não muda -->
-    <button name="click" onclick="changeStylesheet('css/css', 'stylesheet_link')" class="changeButton">Trocar CSS</button>
+    <button name="click" onclick="nextSheet('stylesheet_link')" class="changeButton">Trocar CSS</button>
 
     <!-- Título 1 e título 2 são editados no css1 e no css2-->
     <h1>Título 1</h1>
